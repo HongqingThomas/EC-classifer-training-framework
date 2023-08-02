@@ -1,0 +1,18 @@
+dataset: 'IR_image_single'
+mode: 'IR' # 'visible', 'Fusion'
+data:
+  input_folder: datasets/first_try
+  image_size:
+    h: 144 #1440
+    w: 108 #1080
+train:
+  batch_size: 2
+  train_ratio: 0.6
+  num_epochs: 100
+  pretrain: False
+  lr: 0.01
+  opt: 'adam' # 'sgd'
+  momentum: 0.9
+  weight_decay: 0.00001
+  lr_scheduler: 'exp'
+  gamma: 0.9

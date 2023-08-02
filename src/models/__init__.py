@@ -1,0 +1,1 @@
+from src.models.RGB_model import CNN as CNN
